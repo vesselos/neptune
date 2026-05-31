@@ -1,2 +1,2 @@
-#!/bin/bash
-chmod +x anonproxy.git && mv anonproxy.git anonproxy && mv anonproxy /usr/bin && anonproxy help
+#!/bin/sh
+chmod +x tonion.git && mv tonion.git tonion && mv tonion /usr/bin && tonion help
