@@ -70,7 +70,7 @@ if ! (command -v nc >/dev/null 2>&1 && command -v curl >/dev/null 2>&1 && comman
 
         elif [[ $(command -v apk) ]]; then
 
-              pkgs=( netcat-openbsd curl tor nftables procps NetworkManager iproute2 coreutils util-linux bash sudo )
+              pkgs=( netcat-openbsd curl tor nftables procps networkmanager iproute2 coreutils util-linux bash sudo )
                
               if ! apk add --no-cache "${pkgs[@]}"; then
 	             echo -e "${RED}[${GREEN}ERR${RED}]${GREEN} Ahh.. sorry if TheOnionBox is not being perfect.. But there are some missing dependencies... Please, can you install: ${YELLOW}(${GREEN}${pkgs[@]}${YELLOW})${NC}"
