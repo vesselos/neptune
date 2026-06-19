@@ -1,5 +1,6 @@
 # < --- [ ArchNoN Project ] --- > #
 [*] Two powerfull bash based scripts that automates a secure Tor+Firewall+No IPv6 configuration on linux distros(requires full root access).
+[*] If you'll use it on a fakeroot/chroot env like proot/nethunter, on termux, you have to know that script will block you entirelly to use curl normally, to resolv any link you must use the "link" param, or, the --socks5-hostname 127.0.0.1:9150 on curl.
 
 # [ Requeriments ] # 
 [*] Required PKGs: 
