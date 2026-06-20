@@ -102,7 +102,7 @@ if [ ! -f /etc/systemd/system/archnon-nft.service ] && command -v systemctl >/de
 Description=ArchNoN-nft Custom Service Here !!
 [Service]
 Type=forking
-ExecStart=archnon-nft start
+ExecStart=/usr/bin/archnon-nft start
 RemainAfterExit=yes
 User=root
 [Install]
