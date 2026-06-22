@@ -728,11 +728,8 @@ fi
 
 if pgrep -a tor | grep -IE "tor" >/dev/null 2>&1 || ss -tulpn | grep -iE "6969|9150|9151" >/dev/null 2>&1; then
 
-
-export agent=( 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Edg/148.0.3967.83' )
-
 echo -e "\n${P}[${GREEN}notice${P}]${GREEN} Resolving ${YELLOW}'$link'${GREEN}...${NC}"
-curl --socks5-hostname 127.0.0.1:9150 --user-agent "${agent[$RANDOM % ${#agent[@]}]}" "$link" && echo -e "\n${BLUE}[${GREEN}notice${BLUE}]${YELLOW} "$link" ${GREEN}resolved${NC}" || echo -e "\n${RED}[${GREEN}err${RED}]${GREEN} An error ocurred while trying to resolv: $link${NC}"
+curl --socks5-hostname 127.0.0.1:9150 "$link" && echo -e "\n${BLUE}[${GREEN}notice${BLUE}]${YELLOW} "$link" ${GREEN}resolved${NC}" || echo -e "\n${RED}[${GREEN}err${RED}]${GREEN} An error ocurred while trying to resolv: $link${NC}"
 exit 0
 
 else
