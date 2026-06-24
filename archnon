@@ -103,7 +103,7 @@ if ! (command -v nc >/dev/null 2>&1 && command -v curl >/dev/null 2>&1 && comman
         else
 	      pkgs=( netcat-openbsd tor curl nftables procps network-manager iproute2 coreutils util-linux bash sudo )
               echo -e "${RED}[${NC}-${RED}]${BLUE} Missing dependencies !!${NC}"
-	      echo -e "${RED}[${NC}-${RED}]${GREEN} Bad usage: unsuported pkg manager, please, install: ${BLUE}(${YELLOW}${pkgs[@]}${BLUE})${NC}"
+	      echo -e "${RED}[${NC}-${RED}]${NC} Bad usage: ${RED}unsuported pkg manager, please, install: ${BLUE}(${YELLOW}${pkgs[@]}${BLUE})${NC}"
               exit 1
         fi
 fi
