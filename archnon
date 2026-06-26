@@ -465,8 +465,8 @@ stop)
 mode=2
 
 if pgrep -a archdaemon >/dev/null 2>&1; then
-    echo -e "${RED}[${NC}-${RED}]${NC} Bad usage: ${ORANGE}Archdaemon is running${NC}, ${RED}kill it as root before trying to stop${NC}"
-    echo -e "${RED}[${NC}-${RED}]${YELLOW} Just run: ${P}sudo pkill -9 archdaemon && archnon stop${NC}"
+    echo -e "\n${RED}[${NC}-${RED}]${NC} Bad usage: ${ORANGE}Archdaemon is running${NC}, ${RED}kill it as root before trying to stop${NC}"
+    echo -e "\n${RED}[${NC}-${RED}]${YELLOW} Just run: ${P}sudo pkill -9 archdaemon && archnon stop${NC}"
     exit 1
 fi
 
