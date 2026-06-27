@@ -1,14 +1,15 @@
 # <[ ArchNoN's Anonimation Suite v3.0.7 ]> #
 
-[desctiption] Anonimation Toolkit that ensures your linux machine's internet traffic go through a secure firewall (nftables based) and the Tor network with no IPv6 policy(leak prevention feature). Includes boot automation for the most used service managers and some useful scripts like: A simple Tor config manager, a sys daemon(prevent archnon's PID to get killed ramdomly), and a Socks5's DNS resolution tool.
+[!] ArchNoN is an Anonimation Toolkit that ensures your linux machine's internet traffic go through a secure firewall (nftables based) and the Tor network with no IPv6 policy(leak prevention feature). Includes boot automation for the most used service managers and some useful scripts like: A simple Tor config manager, a sys daemon(prevent archnon's PID to get killed ramdomly), and a Socks5's DNS resolution tool.
 
-- [warn] ArchNoN is a personal project developed by newmasterone27@gmail.com, if you will use it you have to know that developer wont answer in case of any issue occurs in your machine(perhaps, issues are not common, in fact, they are incredible weird).
+### [WARNINGS] ###
+- 1. ArchNoN is a personal project developed by newmasterone27@gmail.com, if you will use it you have to know that developer wont answer in case of any issue occurs in your machine(perhaps, issues are not common, in fact, they are incredible weird).
 
-- [warn] Fakeroot/chroot envs like: termux/proot/cointainers, usually have issues with DNS's resolution config and firewall rules that script applies, sometimes the only way to resolv DNS is by talking directly to the socks addr(can do this using resolvtool, in case of curl command).
+- 2. Fakeroot/chroot envs like: termux/proot/cointainers, usually have issues with DNS's resolution config and firewall rules that script applies, sometimes the only way to resolv DNS is by talking directly to the socks addr(can do this using resolvtool, in case of curl command).
 
 # [ Requeriments ] # 
-- [warn] Required PKGs: (bash, if not installed), all other pkgs can be managed by tool, actually.
-- [warn] Extra: Full root access(to apply firewall rules and DNS anonymation hacks with no issues)
+- 3. Required PKGs: (bash, if not installed), all other pkgs can be managed by tool, actually.
+- 4. Extra: Full root access(to apply firewall rules and DNS anonymation hacks with no issues)
 
 # [ Dir Content ] #
 
@@ -22,7 +23,7 @@
 
 # [ ArchNoN actions ] #
 
-- [warn] usage: archnon [ACTION]
+usage: archnon [ACTION]
 
 - start --> Start ArchNoN and Apply Firewall rules.
 
@@ -42,9 +43,9 @@
 
 
 # [ Clone ] #
-- [warn] Run as root: git clone https://github.com/0xmalaquias/ArchNoN && cd ArchNoN && chmod +x * && ./archnon
+- As root: git clone https://github.com/0xmalaquias/ArchNoN && cd ArchNoN && chmod +x * && ./archnon
 
 
 # [ Boot ] #
-- [notice] Supported service managers are: Open-RC, Systemd and Runit only.
-- [warn] Script detects: rc-service, rc-update, systemctl, sv, runit.
+- 1. Supported service managers are: Open-RC, Systemd and Runit only.
+- 2. Script detects: rc-service, rc-update, systemctl, sv, runit.
