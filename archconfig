@@ -122,7 +122,7 @@ if [ -f /etc/tor/torrc ]; then
 
     echo -e "\n# NOT TOUCH, THIS FILE IS CUSTOM LOAD #" >> /etc/tor/torrc
 
-    # Sorry but changing Tor prots without touchibg script may break its firewall logic #
+    # Sorry but changing Tor prots without touching script may break its firewall logic #
 
     echo -e "\n# Do NOT change Tor ports, it may break script's firewall logic !! #\nTransPort 127.0.0.1:$TRANS IsolateClientAddr IsolateSOCKSAuth IsolateClientProtocol IsolateDestPort IsolateDestAddr\nDNSPort 127.0.0.1:$DNS IsolateClientAddr IsolateSOCKSAuth IsolateClientProtocol IsolateDestPort IsolateDestAddr\nSocksPort 127.0.0.1:$SOCKS IsolateClientAddr IsolateSOCKSAuth IsolateClientProtocol IsolateDestPort IsolateDestAddr\nControlPort 127.0.0.1:$CONTROL" >> /etc/tor/torrc
 
