@@ -113,7 +113,7 @@ fi
 echo -e "${BLUE}" && figlet Archnon
 echo -n -e "${P}v3.0.0.10 ${LB}-->${ORANGE} Portable Bash Based Anonymation Tool${NC}"
 echo -e "\n"
-echo -e "${BLUE}[${GREEN}*${BLUE}]${LB} Developed by: ${ORANGE}gmasterone@duck.com${NC}"
+echo -e "${BLUE}[${GREEN}*${BLUE}]${LB} Coded by: ${ORANGE}gmasterone@duck.com${NC}"
 
 # Service Managers && Boot Automation
 
