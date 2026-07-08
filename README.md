@@ -5,7 +5,7 @@
 ### [WARNINGS] ###
 - 1. Numb is a personal project coded by gmasterone@duck.com, if you will use it you have to know that developer wont answer in case of any issue occurs in your machine(perhaps, issues are not common, in fact, they are very weird).
 
-- 2. Fakeroot/limited envs like: termux/proot/docker, usually have problems with firewall rules that script applies and breaks DNS sock5 only !!.
+- 2. Fakeroot/containers: These kind of limmited environments usually have problems with the firewall rules that numb script applies and causes DNS resolution imposible if is not via socks5/tor only !!.
 
 # [ Requeriments ] # 
 - 3. Required PKGs: Bash, all other can be managed by any of the scripts.
